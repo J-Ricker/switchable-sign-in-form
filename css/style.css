@@ -24,3 +24,81 @@ body::before {
     background-size: cover;
     filter: blur(2px);
 }
+
+.grayBox {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 300px;
+    width: 55%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.grayBox .left .grayBox .right {
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: #ec5353;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+button {
+    font-size: 16px;
+    margin: 25px 0 0 0;
+    color: #ec5353;
+    border: 1px solid #ec5353;
+    background: transparent;
+    font-family: Montserrat, sans-serif;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    background: #ec5353;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.whiteBox {
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    left: 50%;
+    height: 355px;
+    width: 25%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+    transition: all 500ms ease-in-out;
+}
+
+.whiteBox .container {
+    text-align: center;
+}
+
+.whiteBox #signInForm, .whiteBox #signUpForm {
+    border: 3px double #ec5353;
+    padding: 20px;
+}
