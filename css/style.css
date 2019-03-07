@@ -9,3 +9,18 @@ body {
     display: grid;
     align-items: center;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    height: 105vh;
+    width: 105vw;
+    top: -2.5vh;
+    left: -2.5vw;
+    display: block;
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+}
